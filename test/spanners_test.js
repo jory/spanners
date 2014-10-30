@@ -32,8 +32,8 @@ describe('spanners node module.', function () {
   });
 
   it('children 1, childNodes 3', function () {
-    compare('<div>blah<p>foo</p>bar</div>',
-            '<div><span>b</span><span>l</span><span>a</span><span>h</span><p><span>f</span><span>o</span><span>o</span></p><span>b</span><span>a</span><span>r</span></div>');
+    compare('<div>blah <p>foo</p>bar</div>',
+            '<div><span>b</span><span>l</span><span>a</span><span>h</span> <p><span>f</span><span>o</span><span>o</span></p><span>b</span><span>a</span><span>r</span></div>');
   });
 
   it('children 2, childNodes 2', function () {
