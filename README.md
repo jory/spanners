@@ -5,6 +5,8 @@
 
 ## Getting Started
 
+Don't do it!
+
 Install the module with: `npm install spanners`
 
 ```js
@@ -45,5 +47,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## License
 
-Copyright (c) 2014 Jory  
+Copyright (c) 2014 Jory
 Licensed under the MIT license.
