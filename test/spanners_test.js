@@ -7,8 +7,8 @@ var assert = require('assert'),
 var compare = function (input, output) {
   jsdom.env(input, function (iErrors, iWindow) {
     jsdom.env(output, function (oErrors, oWindow) {
-      var inner = spanners.squirrel(iWindow.document.body.firstChild).innerHTML;
-      var outer = oWindow.document.body.firstChild.innerHTML;
+      var inner = spanners.squirrel(iWindow.document.body).innerHTML;
+      var outer = oWindow.document.body.innerHTML;
       assert(inner === outer, input + " !== " + output);
     });
   });
