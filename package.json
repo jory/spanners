@@ -35,7 +35,7 @@
   },
   "scripts": {
     "test": "grunt",
-    "browser": "browserify lib/spanners.js > browser.js"
+    "browser": "browserify -r ./lib/spanners.js:spanners > browser.js"
   },
   "bin": {
     "spanners": "cli.js"
